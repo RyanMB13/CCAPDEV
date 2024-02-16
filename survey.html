@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  
+  <title>UniWall</title>
+  <!-- Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="survey.css">
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>UniWall</h1>
+    <a href="Profilepage.html">
+        <img src="profile-picture.png">
+    </a>
+</header>
+
+  
+  <nav>
+    <a href="mainpage.html">Home</a>  |
+    <a href="events.html">Events Hub</a> | 
+    <a href="survey.html" class="active">Survey Assistance</a> |
+    <a href="login.html">Log In</a> 
+  </nav>
+
+
+  <section>
+    <!-- Most Recent Posts Section -->
+    <h2>Survey Assistance</h2>
+    
+    <p></p>
+
+    <div class="post card post-form">
+      <form id="createPostForm">
+        <div class="mb-3">
+            <label for="postTitle" class="form-label">Survey Title</label>
+            <input type="text" class="form-control" id="postTitle" required>
+        </div>
+        <div class="mb-3">
+            <label for="postContent" class="form-label">Survey Description</label>
+            <textarea class="form-control" id="postContent" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="postImage" class="form-label">Upload Image</label>
+          <input type="file" class="form-control" id="postImage">
+      </div>
+
+        <button type="submit" class="btn btn-primary">Create Post</button>
+      </form>
+    </div>
+
+    <div class="post">
+      <div>
+        <h3></h3>
+        <p>Posted by: <a href="sampleprofile1.html">kuya Juan Archer</a> | Date: February 17, 2024 | 3:07 am</p>
+        <p>Helloo po UniWall! I'm doing a study on the perceptions of undergraduate students from any university on coding. Please answer my survey: https://forms.gle/survey1-notreallink</p>
+        
+        <p>Status: Active</p>
+
+        <select id="sortDropdown" class=" form-select-sm">
+            <option value="recent">---</option>
+            <option value="popular">Answered!</option>
+      
+          </select>
+      </div>
+    </div>
+
+    <div class="post">
+      <div>
+        <h3>Ateneo Azul is Cool</h3>
+        <p>Posted by: <a href="sampleprofile2.html">ate Neo</a> | Date: February 16, 2024 | 10:45 pm</p>
+        <p>Magandang hapon po sa inyong lahat! Humihingi po kami ng tulong sa mga willing mag volunteer sa isang sarbey 
+            patungkol sa mga pananaw ng iba't ibang mga estudyante na galing Mindanao at pumunta sa Maynila upang makapag-aral sa mga 
+            Unibersidad dito. Ito po ang link: https://forms.gle/survey2-notreallink</p>
+        
+        <p>Status: Active</p>
+
+        <select id="sortDropdown" class=" form-select-sm">
+            <option value="recent">---</option>
+            <option value="popular">Answered!</option>
+      
+          </select>
+      </div>
+    </div>
+
+    <div class="post">
+      <div>
+        <h3>Go USTEEEEEEEE</h3>
+        <p>Posted by: <a href="sampleprofile3.html">kuya jUSTin Swimmer</a> | Date: February 16, 2024 | 9:11 pm</p>
+        <p>Hey hey hey!! If you have been playing any instrument for at least 3-4 years, I am conducting a survey on musician's hand muscles. 
+            Please answer my survey: https://forms.gle/survey3-notreallink</p>
+        
+        <p>Status: Active</p>
+        
+        <select id="sortDropdown" class=" form-select-sm">
+            <option value="recent">---</option>
+            <option value="popular">Answered!</option>
+      
+          </select>
+      </div>
+    </div>
+
+    <div class="post">
+      <div>
+        <h3>UP not down</h3>
+        <p>Posted by: <a href="sampleprofile4.html">ate Dili Man</a> | Date: February 16, 2024 | 6:20 pm</p>
+        <p>Hello po, ako si ate Dili Man! mayroon po akong sarbey na pwedeng sagutan ng lahat 
+            ng mga tao patungkol sa kanilang pananaw sa Presidente ng Pilipinas: https://forms.gle/survey4-notreallink</p>
+        
+        <p>Status: Active</p>
+
+        <select id="sortDropdown" class=" form-select-sm">
+            <option value="recent">---</option>
+            <option value="popular">Answered!</option>
+      
+          </select>
+
+      </div>
+    </div>
+
+    <div class="post">
+      <div>
+        <h3>Tamarind Tamaraws</h3>
+        <p>Posted by: <a href="sampleprofile5.html">kuya Fernando Eduardo Ubas</a> | Date: February 16, 2024 | 5:04 pm</p>
+        <p>Hi guys !! Please help me with my thesis! I am a Sociology student conducting a survey on the difference between 
+            people who have gone homeschooling in any grade from K to 12, 
+            and people who attended traditional K to 12 school. Please answer my survey: https://forms.gle/survey5-notreallink</p>
+        
+        <p>Status: Active</p>
+
+        <select id="sortDropdown" class=" form-select-sm">
+            <option value="recent">---</option>
+            <option value="popular">Answered!</option>
+      
+          </select>        
+
+      </div>
+    </div>
+    
+  </section>
+
+</body>
+</html> 

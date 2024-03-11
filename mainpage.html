@@ -1,25 +1,29 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
-  
   <title>UniWall</title>
   <!-- Links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="mainpage.css">
-
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#createPostBtn").click(function(){
+        $(".post-form").toggle();
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
     <h1>UniWall</h1>
     <a href="Profilepage.html">
-        <img src="profile-picture.png">
+      <img src="profile-picture.png">
     </a>
-</header>
+  </header>
 
-  
   <nav>
     <a href="mainpage.html" class="active">Home</a>  |
     <a href="events.html">Events Hub</a> | 
@@ -27,19 +31,12 @@
     <a href="login.html">Log In</a> 
   </nav>
 
-
   <section>
     <!-- Most Recent Posts Section -->
     <h2>Welcome to UniWall</h2>
+    <button id="createPostBtn" class="btn btn-primary">Create Post</button>
 
-    <select id="sortDropdown" class=" form-select-sm">
-      <option value="recent">Most Recent</option>
-      <option value="popular">Most Popular</option>
-
-    </select>
-    <p></p>
-
-    <div class="post card post-form">
+    <div class="post card post-form" style="display: none;">
       <form id="createPostForm">
         <div class="mb-3">
             <label for="postTitle" class="form-label">Post Title</label>
@@ -52,12 +49,13 @@
         <div class="mb-3">
           <label for="postImage" class="form-label">Upload Image</label>
           <input type="file" class="form-control" id="postImage">
-      </div>
-
+        </div>
         <button type="submit" class="btn btn-primary">Create Post</button>
       </form>
-    </div>    
+    </div>   
 
+    <div></div>
+    
     <div class="post">
       <div>
         <h3>Tamarind Tamaraws</h3>

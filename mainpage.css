@@ -107,3 +107,7 @@ body {
         border: none;
         cursor: pointer;
     }
+
+    #createPostBtn {
+      margin-bottom: 20px; /* Adjust the margin-bottom value as needed */
+    }
